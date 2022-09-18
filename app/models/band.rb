@@ -28,4 +28,10 @@ class Band
     def play_in_venue(venue,date)
         
     end
+
+    # all_introductions
+
+    def all_introductions
+        ["Hello #{venue.city}!!!!!, we are #{band.name} and we're from #{band.hometown}"]
+    end
 end
