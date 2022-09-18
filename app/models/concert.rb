@@ -16,5 +16,19 @@ class Concert
         @@all
         
     end
+
+    # returns true if concert is in band hometown and false if not
+
+    def hometown_show?
+        self.band.hometown == self.venue.city
+        
+    end
+
+    # introduction
+
+    def introducction
+        "Hello #{venue.city}!!!!!, we are #{band.name} and we're from #{band.hometown}"
+        
+    end
     
 end
